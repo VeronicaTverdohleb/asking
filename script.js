@@ -1,6 +1,8 @@
 const noButton = document.getElementById("no-btn");
 const yesButton = document.getElementById("yes-btn");
 const popup = document.getElementById("popup");
+var firstAudio = document.getElementById("firstAudio");
+var secondAudio = document.getElementById("secondAudio");
 
 noButton.addEventListener("mouseover", () => {
   noButton.style.position = "absolute";
@@ -9,6 +11,7 @@ noButton.addEventListener("mouseover", () => {
 });
 
 yesButton.addEventListener("click", () => {
+  firstAudio.pause();
   document.querySelector(".container h1").style.display = "none";
   document.querySelector(".buttons").style.display = "none";
   popup.style.display = "block";
@@ -24,6 +27,8 @@ yesButton.addEventListener("click", () => {
       origin: { y: 0.5, x: 0.5 },
     });
   }, 1500);
+
+  secondAudio.play();
 });
 
 popup.addEventListener("click", () => {
