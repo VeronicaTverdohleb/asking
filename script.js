@@ -4,6 +4,12 @@ const popup = document.getElementById("popup");
 var firstAudio = document.getElementById("firstAudio");
 var secondAudio = document.getElementById("secondAudio");
 
+document.getElementById("startButton").addEventListener("click", function () {
+  document.getElementById("initialUI").style.display = "none";
+  document.getElementById("mainUI").style.display = "block";
+  firstAudio.play();
+});
+
 noButton.addEventListener("mouseover", () => {
   noButton.style.position = "absolute";
   noButton.style.left = Math.random() * 80 + "vw";
@@ -11,7 +17,6 @@ noButton.addEventListener("mouseover", () => {
 });
 
 yesButton.addEventListener("click", () => {
-  firstAudio.pause();
   document.querySelector(".container h1").style.display = "none";
   document.querySelector(".buttons").style.display = "none";
   popup.style.display = "block";
@@ -27,7 +32,7 @@ yesButton.addEventListener("click", () => {
       origin: { y: 0.5, x: 0.5 },
     });
   }, 1500);
-
+  firstAudio.pause();
   secondAudio.play();
 });
 

@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Suprise...!</title>
+    <title>Hello</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <div id="initialUI" style="text-align:center;">
+        <img src="./media/image.png" alt="Welcome Image" />
+        <p>Uh-oh, you've been visited by the sad hamster, it needs to ask you a question</p>
+        <button id="startButton">See question</button>
+          </div>
+    <div id="mainUI" style="display:none;">
     <div class="container">
         <h1>Will you hire me as a student worker?</h1>
         <div class="buttons">
             <button id="no-btn">No</button>
             <button id="yes-btn">Yes</button>
         </div>
-        <div class="popup" id="popup">
-            <p>Aww, slayy!</p>
-        </div>
     </div>
+        <div class="popup" id="popup" style="display:none;">
+            <h2>Aww, slayy!</h2>
+        </div>
+    
 
     <img src="./media/image.png" alt="Decorative Image" id="cornerImage">
 

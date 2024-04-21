@@ -12,6 +12,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 .buttons {
     margin: 20px;
 }
@@ -45,7 +49,7 @@ body {
     font-family: 'Great Vibes', cursive;
     text-align: center;
     margin: 0;
-    background-color: #f9f4f5; /* Soft pastel color for the background */
+    background-color: #f5abba; 
 }
 
 .container {
@@ -55,7 +59,13 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #e91e63; /* Romantic color for the heading */
+    color: #e91e63; 
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #e91e63; 
 }
 
 .buttons {
@@ -68,14 +78,14 @@ button {
     margin: 10px;
     border: none;
     border-radius: 20px;
-    background-color: #ff4081; /* Romantic color for the buttons */
+    background-color: #ff4081; 
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #ff5c8d; /* Lighter shade on hover for a soft effect */
+    background-color: #ff5c8d; 
 }
 
 .popup {
