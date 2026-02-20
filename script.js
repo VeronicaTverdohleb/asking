@@ -23,19 +23,20 @@ yesButton.addEventListener("click", () => {
   popup.style.opacity = "1";
   popup.style.fontSize = "24px";
   popup.style.animation = "growText 2s forwards";
+  const heart = confetti.shapeFromPath({
+    path: "M167.5 72.5 C167.5 55 152.5 40 135 40 C120 40 107.5 50 102.5 62.5 C97.5 50 85 40 70 40 C52.5 40 37.5 55 37.5 72.5 C37.5 110 102.5 150 102.5 150 C102.5 150 167.5 110 167.5 72.5 Z",
+    matrix: [0.03, 0, 0, 0.03, -3, -3],
+  });
+
   const confettiInterval = setInterval(() => {
     confetti({
       particleCount: 80,
-      startVelocity: 30,
-      spread: 360,
-      angle: 90,
-      origin: { y: 0.5, x: 0.5 },
-      shapes: ["emoji"],
-      shapeOptions: {
-        emoji: {
-          value: ["❤️", "💖", "💘"],
-        },
-      },
+      startVelocity: 25,
+      spread: 120,
+      gravity: 0.8,
+      origin: { y: 0.6 },
+      shapes: [heart],
+      colors: ["#ff4d6d", "#ff758f", "#ff8fa3"],
     });
   }, 1500);
 
