@@ -25,13 +25,20 @@ yesButton.addEventListener("click", () => {
   popup.style.animation = "growText 2s forwards";
   const confettiInterval = setInterval(() => {
     confetti({
-      particleCount: 150,
+      particleCount: 80,
       startVelocity: 30,
       spread: 360,
       angle: 90,
       origin: { y: 0.5, x: 0.5 },
+      shapes: ["emoji"],
+      shapeOptions: {
+        emoji: {
+          value: ["❤️", "💖", "💘"],
+        },
+      },
     });
   }, 1500);
+
   firstAudio.pause();
   secondAudio.play();
 });
